@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BTMenu"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:id="@+id/context_floating_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Floating Context Menu"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="150dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/context_action_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contextual Action Mode"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/context_floating_menu">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/popup_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pop-up Menu"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/context_action_mode"
+        android:onClick="showPopup">
+
+    </TextView>
+</RelativeLayout>
